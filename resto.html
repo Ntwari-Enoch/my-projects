@@ -1,0 +1,1143 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To MEGA RESTO-CAFE</title>
+    <link rel="icon" type="image/png" href="pics/kitch icon2.jpeg">
+    <link rel="stylesheet" href="resto.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="resto.js">
+</head>
+<body>
+   <!--loading animation-->
+
+    <section class="resto-loading" id="loading">
+ <div class="loader">
+    <div class="plate">
+      <div class="steam">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="text" id="loadingText">
+   Mega Resto-Cafe<span>...</span>
+    </div>
+  </div>
+
+  <script>
+    // Simple dots animation for text
+    let dots = 0;
+    setInterval(() => {
+      const text = document.getElementById("loadingText");
+      dots = (dots + 1) % 4;
+      text.innerHTML = "Mega Resto-Cafe <span>" + ".".repeat(dots) + "</span>";
+    }, 500);
+  </script>
+</section>
+<!--web content-->
+
+    <div id="content">
+
+        <header id="#top">
+        <nav>
+            <a href="#homepage" class="logo">
+                <img src="pics/kitch icon2.jpeg" alt="">
+                <h3>Mega Resto-Cafe.</h3>
+            </a> 
+            <div class="nav-cont" id="navlinks">
+                <ul>
+                    <li><a href="#homepage">Home</a></li>
+                    <li><a href="#Menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                    <img src="cross.png" alt="" id="close">
+                </ul>
+                <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20book%20a%20table"><button class="order">Reserve Table</button></a>
+            </div>
+            <img id="menu" src="bx-menu.svg">
+        </nav>
+    </header>
+
+<!--Homepage section-->
+
+    <section class="homepage" id="homepage">
+        <div class="home">
+            <div class="content">
+                <p>You're Most Welcome To<h1>MEGA RESTO-CAFE.</h1> <h3>The Most Delicious meal Corner in Kigali</h3></p><br>
+                <p>We serve freshly prepared dishes made from the finest local ingredients,<br> blending traditional flavors with a modern twist. Whether you’re here for <br> a quick bite, a family dinner, or a special occasion, our team is dedicated <br> to making your experience memorable. <br><br>COME HUNGRY, LEAVE HAPPY!</p><br>
+                <div class="buttons">
+                    <a href="#Menu" class="btn1">Order now</a>
+                    <a href="#Menu" class="btn2">Explore Food</a>
+                </div>
+            </div>
+                <div class="image"><img src="pics/pizza.jpg" alt=""></div>
+                    </div> 
+                </div>
+        </div>
+        </div>
+    </section>
+
+    <!--restaurant menu-->
+
+<div id="contenti">
+     <section class="Menu" id="Menu">
+        <div class="content">
+            <h2>Our Regular Menu Pack</h2><br><br><br>
+            <ul class="kind">
+               <li><a href="#specialfood" class="special">Special Foods</a></li> 
+               <li><a href="#breakfast" class="special">Breakfast</a> </li>
+               <li><a href="#snacks" class="special">Snacks</a></li>  
+                <li><a href="#dinner" class="special">Dinner</a></li>
+                <li><a href="#lunch" class="special">Lunch</a></li>
+                <li><a href="#drinks" class="special">Drinks</a></li>
+                <li><a href="#dessert" class="special">Dessert</a></li>
+            </ul>
+        </div><br><br>
+
+        <h1 id="specialfood">Special foods</h1>
+        <div class="food">
+            <div class="food-content">
+                <img src="pics/fish curry.jpeg" alt="" style="width: 70%;">
+                <h2>Fish curry</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This fish is typically roasted with a deep fryer</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>12,000RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order" target="_blank">Order now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="food-content">
+                <img src="pics/pizza2.jpg" alt="" style="width: 70%;">
+                <h2>Pizza slice</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>this is a slice of pizza made with sandwich bread</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>2,500RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="food-content">
+                <img src="pics/chicken meal.jpg" alt="" style="width: 70%;">
+                <h2>Chicken meal</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>Chicken meal is typically prepared from exotic chicken</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>10,500RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/pasta.jpeg" alt="" style="width: 70%;">
+                <h2>Pasta</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>Pasta is a type of food made from unleaved doughs</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>3,000RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/burger2.jpg" alt="" style="width: 70%;">
+                <h2>Chicken burger</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This burger is typically roasted with a deep fryer</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>3,500RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/chicken shawarma.png" alt="" style="width: 70%;">
+                <h2>Chicken shawarma</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This is fried chicken with greens rolled in chapati</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>4,000RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/french fries.jpeg" alt="" style="width: 70%;">
+                <h2>French fries</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This chips is typically fried at medium fire </p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>3,500RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/japanese2.jpeg" alt="" style="width: 70%;">
+                <h2>Asian pasta</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This pasta is prepared from asian doughs with ripped greens </p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>3,000RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+        
+        <h1 id="breakfast">Breakfast</h1>
+         <div class="food">
+            <div class="food-content">
+                <img src="pics/fish curry.jpeg" alt="" style="width: 70%;">
+                <h2>Fish curry</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This fish is typically roasted with a deep fryer</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>12,000RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order" target="_blank">Order now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="food-content">
+                <img src="pics/pizza2.jpg" alt="" style="width: 70%;">
+                <h2>Pizza slice</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>this is a slice of pizza made with sandwich bread</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>2,500RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="food-content">
+                <img src="pics/chicken meal.jpg" alt="" style="width: 70%;">
+                <h2>Chicken meal</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>Chicken meal is typically prepared from exotic chicken</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>10,500RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/pasta.jpeg" alt="" style="width: 70%;">
+                <h2>Pasta</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>Pasta is a type of food made from unleaved doughs</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>3,000RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/burger2.jpg" alt="" style="width: 70%;">
+                <h2>Chicken burger</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This burger is typically roasted with a deep fryer</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>3,500RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/chicken shawarma.png" alt="" style="width: 70%;">
+                <h2>Chicken shawarma</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This is fried chicken with greens rolled in chapati</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>4,000RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/french fries.jpeg" alt="" style="width: 70%;">
+                <h2>French fries</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This chips is typically fried at medium fire </p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>3,500RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/japanese2.jpeg" alt="" style="width: 70%;">
+                <h2>Asian pasta</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This pasta is prepared from asian doughs with ripped greens </p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>3,000RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+
+
+        <h1 id="snacks">Snacks</h1>
+         <div class="food">
+            <div class="food-content">
+                <img src="pics/fish curry.jpeg" alt="" style="width: 70%;">
+                <h2>Fish curry</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This fish is typically roasted with a deep fryer</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>12,000RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order" target="_blank">Order now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="food-content">
+                <img src="pics/pizza2.jpg" alt="" style="width: 70%;">
+                <h2>Pizza slice</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>this is a slice of pizza made with sandwich bread</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>2,500RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="food-content">
+                <img src="pics/chicken meal.jpg" alt="" style="width: 70%;">
+                <h2>Chicken meal</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>Chicken meal is typically prepared from exotic chicken</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>10,500RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/pasta.jpeg" alt="" style="width: 70%;">
+                <h2>Pasta</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>Pasta is a type of food made from unleaved doughs</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>3,000RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/burger2.jpg" alt="" style="width: 70%;">
+                <h2>Chicken burger</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This burger is typically roasted with a deep fryer</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>3,500RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/chicken shawarma.png" alt="" style="width: 70%;">
+                <h2>Chicken shawarma</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This is fried chicken with greens rolled in chapati</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>4,000RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/french fries.jpeg" alt="" style="width: 70%;">
+                <h2>French fries</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This chips is typically fried at medium fire </p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>3,500RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/japanese2.jpeg" alt="" style="width: 70%;">
+                <h2>Asian pasta</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This pasta is prepared from asian doughs with ripped greens </p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>3,000RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+
+
+        <h1 id="dinner">Dinner</h1>
+         <div class="food">
+            <div class="food-content">
+                <img src="pics/fish curry.jpeg" alt="" style="width: 70%;">
+                <h2>Fish curry</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This fish is typically roasted with a deep fryer</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>12,000RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order" target="_blank">Order now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="food-content">
+                <img src="pics/pizza2.jpg" alt="" style="width: 70%;">
+                <h2>Pizza slice</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>this is a slice of pizza made with sandwich bread</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>2,500RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="food-content">
+                <img src="pics/chicken meal.jpg" alt="" style="width: 70%;">
+                <h2>Chicken meal</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>Chicken meal is typically prepared from exotic chicken</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>10,500RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/pasta.jpeg" alt="" style="width: 70%;">
+                <h2>Pasta</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>Pasta is a type of food made from unleaved doughs</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>3,000RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/burger2.jpg" alt="" style="width: 70%;">
+                <h2>Chicken burger</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This burger is typically roasted with a deep fryer</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>3,500RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/chicken shawarma.png" alt="" style="width: 70%;">
+                <h2>Chicken shawarma</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This is fried chicken with greens rolled in chapati</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>4,000RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/french fries.jpeg" alt="" style="width: 70%;">
+                <h2>French fries</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This chips is typically fried at medium fire </p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>3,500RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/japanese2.jpeg" alt="" style="width: 70%;">
+                <h2>Asian pasta</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This pasta is prepared from asian doughs with ripped greens </p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>3,000RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+
+
+        <h1 id="lunch">Lunch</h1>
+         <div class="food">
+            <div class="food-content">
+                <img src="pics/fish curry.jpeg" alt="" style="width: 70%;">
+                <h2>Fish curry</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This fish is typically roasted with a deep fryer</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>12,000RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order" target="_blank">Order now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="food-content">
+                <img src="pics/pizza2.jpg" alt="" style="width: 70%;">
+                <h2>Pizza slice</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>this is a slice of pizza made with sandwich bread</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>2,500RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="food-content">
+                <img src="pics/chicken meal.jpg" alt="" style="width: 70%;">
+                <h2>Chicken meal</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>Chicken meal is typically prepared from exotic chicken</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>10,500RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/pasta.jpeg" alt="" style="width: 70%;">
+                <h2>Pasta</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>Pasta is a type of food made from unleaved doughs</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>3,000RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/burger2.jpg" alt="" style="width: 70%;">
+                <h2>Chicken burger</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This burger is typically roasted with a deep fryer</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>3,500RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/chicken shawarma.png" alt="" style="width: 70%;">
+                <h2>Chicken shawarma</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This is fried chicken with greens rolled in chapati</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>4,000RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/french fries.jpeg" alt="" style="width: 70%;">
+                <h2>French fries</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This chips is typically fried at medium fire </p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>3,500RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/japanese2.jpeg" alt="" style="width: 70%;">
+                <h2>Asian pasta</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This pasta is prepared from asian doughs with ripped greens </p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>3,000RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+
+    <h1 id="drinks">Drinks</h1>
+     <div class="food">
+            <div class="food-content">
+                <img src="pics/fish curry.jpeg" alt="" style="width: 70%;">
+                <h2>Fish curry</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This fish is typically roasted with a deep fryer</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>12,000RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order" target="_blank">Order now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="food-content">
+                <img src="pics/pizza2.jpg" alt="" style="width: 70%;">
+                <h2>Pizza slice</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>this is a slice of pizza made with sandwich bread</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>2,500RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="food-content">
+                <img src="pics/chicken meal.jpg" alt="" style="width: 70%;">
+                <h2>Chicken meal</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>Chicken meal is typically prepared from exotic chicken</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>10,500RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/pasta.jpeg" alt="" style="width: 70%;">
+                <h2>Pasta</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>Pasta is a type of food made from unleaved doughs</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>3,000RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/burger2.jpg" alt="" style="width: 70%;">
+                <h2>Chicken burger</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This burger is typically roasted with a deep fryer</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>3,500RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/chicken shawarma.png" alt="" style="width: 70%;">
+                <h2>Chicken shawarma</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This is fried chicken with greens rolled in chapati</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>4,000RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/french fries.jpeg" alt="" style="width: 70%;">
+                <h2>French fries</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This chips is typically fried at medium fire </p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>3,500RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/japanese2.jpeg" alt="" style="width: 70%;">
+                <h2>Asian pasta</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This pasta is prepared from asian doughs with ripped greens </p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>3,000RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 id="dessert">Dessert</h1>
+         <div class="food">
+            <div class="food-content">
+                <img src="pics/fish curry.jpeg" alt="" style="width: 70%;">
+                <h2>Fish curry</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This fish is typically roasted with a deep fryer</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>12,000RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order" target="_blank">Order now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="food-content">
+                <img src="pics/pizza2.jpg" alt="" style="width: 70%;">
+                <h2>Pizza slice</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>this is a slice of pizza made with sandwich bread</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>2,500RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="food-content">
+                <img src="pics/chicken meal.jpg" alt="" style="width: 70%;">
+                <h2>Chicken meal</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>Chicken meal is typically prepared from exotic chicken</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>10,500RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/pasta.jpeg" alt="" style="width: 70%;">
+                <h2>Pasta</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>Pasta is a type of food made from unleaved doughs</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>3,000RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/burger2.jpg" alt="" style="width: 70%;">
+                <h2>Chicken burger</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This burger is typically roasted with a deep fryer</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>3,500RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/chicken shawarma.png" alt="" style="width: 70%;">
+                <h2>Chicken shawarma</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This is fried chicken with greens rolled in chapati</p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>4,000RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/french fries.jpeg" alt="" style="width: 70%;">
+                <h2>French fries</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This chips is typically fried at medium fire </p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>3,500RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <img src="pics/japanese2.jpeg" alt="" style="width: 70%;">
+                <h2>Asian pasta</h2><br>
+                <div class="ratings">
+                    <img src="pics/5-star.jpeg" alt="">
+                </div>
+                 <p>This pasta is prepared from asian doughs with ripped greens </p><br>
+                <div class="price">
+                    <div class="price-content">
+                       <p>3,000RWF</p>
+                        <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20place%20an%20order">Order now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Reservation page-->
+
+    <section class="reservation" id="reservation">
+        <div class="reserve-cont">
+            <h2>Do You Have Any Dinner<br>Plan Today? Reserve <br>Your Table</h2><br>
+            <p>make your online reservation,read restaurant reviews from diners and earn <br>points towards free meals.Opentable is a real-time online reservation.</p><br><br>
+        
+            <a href="https://wa.me/250788313373?text=Hello%20I%20want%20to%20book%20a%20table" class="reserve">Make Reservation</a><br>         
+        </div>
+        <img src="pics/tasty meal.jpg" alt="">
+    </section>
+
+    <!--About us page-->
+    
+    <section class="about" id="about">
+        <div class="about-content">
+            <h1>We Serve The Taste <br>You Like <img src="pics/smile emoji.jpeg" alt=""></h1>
+            <p>This is the type of restaurant which typically serves food and drinks. In <br> addition to light refreshments such as backed goods or Snacks. <br>The term comes from the rench word meaning food</p><br><br><br>
+           <a href="#contacts">Contact Us</a>
+        </div>
+        <img src="pics/floating burger.png" alt="" class="aboutimage">
+    </section>
+
+    <!--Customers reviews-->
+
+     <section class="reviews" id="reviews">
+        <div class="review-cont"><br><br><br>
+            <h1>What Our Customer Says?</h1>
+    
+        <div class="review-box">
+            <div class="box">
+                <div class="box-content">
+                    <p>"This place is great! Atmosphere is chill and cool but the staff is also really friendly. They know what they are doing and what they're talking about, and you can tell making their customers happy is their priority."</p><br>
+                    <div class="circle">
+                        <img src="pics/sam johnson.jpg" alt="">
+                        <h2>Savannah Nguyen</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                  <div class="box-content">
+                    <p>"This place is great! Atmosphere is chill and cool but the staff is also really friendly. They know what they are doing and what they're talking about, and you can tell making their customers happy is their priority."</p><br>
+                    <div class="circle">
+                        <img src="pics/james smith.jpg" alt="">
+                        <h2>Dave Brooklyn</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                  <div class="box-content">
+                    <p>"This place is great! Atmosphere is chill and cool but the staff is also really friendly. They know what they are doing and what they're talking about, and you can tell making their customers happy is their priority."</p><br>
+                    <div class="circle">
+                        <img src="pics/kylie jenner.jpg" alt="">
+                        <h2>Shenseea Camaro</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!--Service page-->
+    <section class="blogs" id="services">
+        <div class="blog-image">
+            <img src="pics/chef2.png" alt="">
+        </div>
+        <div class="blog-content">
+            <h2>We Are More Than <br>Multiple Services</h2><br><br>
+            <p>This is a type of restaurant which typically serves food and drinks. In <br> addition to light refreshments such as backed goods or Snacks. The term comes from the rench word meaning food</p><br><br>
+
+            <!--list of services provided-->
+            <div class="ul">
+                <ul>
+                    <li>Online order</li><br>
+                    <li>24/7 Services</li><br>
+                    <li>Clean kitchen</li>
+                </ul><br>
+                <ul class="list2">
+                    <li>Pre-reservation</li><br>
+                    <li>Catering Services</li><br>
+                    <li>Super chefs</li>
+                </ul>
+            </div>
+            <br><br>
+            <a href="#about">About us</a>
+        </div>
+    </section>
+
+    <!--contact page-->
+    
+    <section class="contact" id="contacts">
+        <div class="contact-info">
+              <div class="keep-close"></div>
+            <h1>Get In touch</h1>
+            <p>
+               Contact with us to learn more about our restaurant and for any questions, feedback or inquiries. <br> We are here to
+        listen and help in any way we can. Please fill out the
+        form or reach out to us via email or phone
+            </p><br>
+            <div class="addres">
+                <img src="pics/location.png" alt=""><span>Kigali,kisimenti KG 13 ST</span><br><br>
+                <img src="pics/envelope.jpeg" alt=""> <span>megaresto&cafe@gmail.com</span><br><br>
+                <img src="pics/phone.jpeg" alt=""> <span>+250 788 313 373 / +250 785 799 674</span><br><br>
+            </div><br><br>
+            <h2>follow us on</h2>
+            <div class="social">
+                <a href="#"><img src="pics/facebook.jpeg" alt=""></a> 
+                <a href="#"><img src="pics/instagram.jpeg" alt=""></a>
+                <a href="https://wa.me/250788313373?"><img src="pics/whatsapp.jpeg" alt=""></a> 
+             </div>
+        </div>
+    </section>
+
+    <footer>
+    <div class="footer-cont">
+        <div class="logofooter">
+            <img src="pics/floating burger.png" alt=""> 
+            <h2>Mega <br>Resto-Cafe.</h2>
+        </div>
+        <div class="links">
+           <h4>Services</h4>
+           <ul>
+               <li><a href="#blogs">online order</a></li>
+               <li><a href="#blogs">pre-reservation</a></li>
+               <li><a href="#blogs">24/7 services</a></li>
+               <li><a href="#blogs">Catering services</a></li>
+               <li><a href="#blogs">clean kitchen</a></li>
+               <li><a href="#blogs">super chefs</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>Quick Links</h4>
+            <ul>
+               <li><a href="#about">About Us</a></li>
+               <li><a href="#Menu">Menu</a></li>
+               <li><a href="#reviews">Reviews</a></li>
+               <li><a href="#blogs">Services</a></li>
+               <li><a href="#reservation">Reserve Table</a></li>
+               <li><a href="#Menu">Order Foods</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>Help</h4>
+            <ul>
+               <li><a href="#contacts">Contact Us</a></li>
+               <li><a href="#contacts">Support</a></li>
+               <li><a href="#contacts">FAQs</a></li>
+           </ul>
+        </div>
+    </div>
+    <div class="line"></div><br><br>
+    <p>Copyright &#169; Mega restaurant 2025 | All Rights Reserved. <br>
+        - Powered By Monixi technology - 
+    </p>
+    </div>
+
+    </footer>
+        <!-- back to top btn -->
+        <a href="#top" id="backToTopBtn">↑</a>
+</div>
+</div>
+   
+   
+    <script>
+        const menu=document.getElementById("menu");
+const closelinks=document.getElementById("close");
+const navlinks=document.getElementById("navlinks");
+
+menu.addEventListener("click",()=>{
+navlinks.style.display="block";
+navlinks.style.transform="translateX(10%)";
+});
+closelinks.addEventListener("click",()=>{
+navlinks.style.transform="translateX(105%)";
+});
+
+let loading=document.getElementById("loading");
+let content=document.getElementById("content");
+let contenti=document.getElementById("contenti");
+let backtotop=document.getElementById("backToTopBtn");
+setTimeout(function(){
+    loading.style.display="none";
+    content.style.display="block";
+    contenti.style.display="block";
+    backtotop.style.display="block";
+},4040);
+
+    </script>
+   
+    
+
+</body>
+</html>

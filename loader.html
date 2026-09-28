@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Loading</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff; /* Black background */
+      font-family: "Poppins", sans-serif;
+    }
+    .loader {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Plate */
+    .plate {
+      width: 80px;
+      height: 80px;
+      border: 5px solid orange;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: spin 3s linear infinite;
+      position: relative;
+      background: white;
+      box-shadow: 0 0 25px rgba(53, 27, 2, 0.6);
+    }
+
+    .plate::before {
+      content: "🍽️";
+      font-size: 40px;
+    }
+
+    /* Steam */
+    .steam {
+      display: flex;
+      gap: 6px;
+      position: absolute;
+      top: -50px;
+    }
+
+    .steam div {
+      width: 6px;
+      height: 20px;
+      background: orange;
+      border-radius: 50px;
+      animation: rise 2s ease-in-out infinite;
+    }
+
+    .steam div:nth-child(2) {
+      animation-delay: 0.3s;
+    }
+    .steam div:nth-child(3) {
+      animation-delay: 0.6s;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes rise {
+      0% { transform: translateY(20px); opacity: 0; }
+      50% { opacity: 1; }
+      100% { transform: translateY(-20px); opacity: 0; }
+    }
+
+    /* Loading text */
+    .text {
+      margin-top: 40px;
+      font-size: 18px;
+      font-family: cursive;
+      font-weight: bold;
+      color: rgb(54, 8, 8);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .text span {
+      color: rgb(54, 37, 6);
+    }
+  </style>
+</head>
+<body>
+  <div class="loader">
+    <div class="plate">
+      <div class="steam">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="text" id="loadingText">
+   Mega Resto-Cafe<span>...</span>
+    </div>
+  </div>
+
+  <script>
+    // Simple dots animation for text
+    let dots = 0;
+    setInterval(() => {
+      const text = document.getElementById("loadingText");
+      dots = (dots + 1) % 4;
+      text.innerHTML = "Mega Resto-Cafe <span>" + ".".repeat(dots) + "</span>";
+    }, 500);
+  </script>
+</body>
+</html>
